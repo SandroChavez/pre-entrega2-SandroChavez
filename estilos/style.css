@@ -2,31 +2,34 @@
     padding: 0;
     border: 0;
     margin: 0;
-    list-style: none;
     text-decoration: none;
+    list-style: none;
 }
 
+/* Encabezado */
 #header{
     background-color: rgb(255, 195, 83);
     padding: 0;
     height: 75px;
+    position: sticky;
+
 }
 
-
+/* Icono lupa */
 .icono-lupa{
     display:flex;
 }
-
 .icono-lupa img{
     width: 20px;
     height: auto;
 }
 
+
+/* Iconos-navegacion */
 .icons-nav ul li a img{
     width: 40px;
     height: auto;
 }
-
 .icons-nav ul{
     padding: 0;
     margin: 0;
@@ -69,4 +72,11 @@ button{
     #enlaces{
         display: none;
     }
+}
+@media screen and (min-width: 992px){
+
+    #nav-item a{
+        font-size: 17px;
+    }
+    
 }
