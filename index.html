@@ -4,59 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Document</title>
 </head>
 <body>
 
-    <header class="container-fluid bg-dark">
+    <header id="header" class="container-lg">
 
-        <nav>
+        <nav class="navbar justify-content-sm-between navbar-expand-sm navbar-light p-2">
             
-            <!-- Icono -->
-            <div class="icono">
-                <a href="#">
-                    <img src="imagenes/iconos/Screenshot_1.png" alt="icono">
-                </a>
+            
+            <!-- logo -->
+            <a class="navbar-brand" href="#">
+                <img src="Imagenes/iconos/logo-fenix.png" alt="" class="icono">
+            </a>
+
+            <div id="none">
+                <div>   
+                    <div class="input d-flex justify-content-start align-items-center  bg-white">
+                        <div class="icono-lupa d-flex align-content-center">
+                            <img src="Imagenes/iconos/lupa.png" alt="">
+                        </div>
+                        <input type="text">
+                    </div>
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Playstation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">XBOX</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nintndo</a>
+                        </li>
+                    </ul>
+                    
+                </div>
             </div>
 
-            <div class="barra-busqueda-desktop">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Updates</a>
-                    </li>
-                </ul>
+            
+
+            
+
+            <div class="contnedor-icons d-flex gap-3 h-auto">
+                <div class="icons-nav d-flex align-content-center">
+                    <ul class="d-flex align-content-center gap-sm-2 gap-md-4">
+                        <li>
+                            <a href="">
+                                <img src="Imagenes/iconos/carrito.png" alt="" class="icono">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="Imagenes/iconos/cuenta.png" alt="" class="icono">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#enlaces">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <div class="barra-busqueda-mobile">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Updates</a>
-                    </li>
-                </ul>
-            </div>
+            
+            
+
+
+            
         </nav>
-
-    </header>
-    <main class="container bg-black">
+        <!-- enlaces -->
+        <div class="collapse navbar-collapse" id="enlaces">   
+            <ul class="navbar-nav p-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Playstation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">XBOX</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nintndo</a>
+                </li>
+                <li class="input nav-item d-flex justify-content-start align-items-center bg-white w-25">
+                    <div class="icono-lupa d-flex align-content-center">
+                        <img src="Imagenes/iconos/lupa.png" alt="">
+                    </div>
+                    <input type="text">
+                </li>
+            </ul>
+        </div>
         
-    </main>
-    <footer class="container bg-dark">
-
-    </footer>
-    
+            
+    </header>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
