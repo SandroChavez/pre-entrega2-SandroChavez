@@ -4,31 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Estilos -->
     <link rel="stylesheet" href="estilos/main.css">
     <link rel="stylesheet" href="estilos/style.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
 
-    <header id="header" class="container-lg">
+    <header id="header" class="container-lg z-3 position-sticky">
 
-        <nav class="navbar justify-content-sm-between navbar-expand-sm navbar-light p-2">
-            
-            
+        <nav class="navbar justify-content-sm-between navbar-expand-sm p-2">
+
+
             <!-- logo -->
             <a class="navbar-brand" href="#">
                 <img src="Imagenes/iconos/logo-fenix.png" alt="" class="icono">
             </a>
 
-            <div id="none">
-                <div>   
+            <!-- Barra navegacion Desktop -->
+            <div id="bar-nav-desktop">
+                <div>
+
+                    <!-- Barra Busqueda Desktop -->
                     <div class="input d-flex justify-content-start align-items-center  bg-white">
                         <div class="icono-lupa d-flex align-content-center">
                             <img src="Imagenes/iconos/lupa.png" alt="">
                         </div>
                         <input type="text">
                     </div>
-                    <ul class="navbar-nav justify-content-center">
+
+                    <!-- Lista Enlaces Destop -->
+                    <ul class="navbar-nav justify-content-center gap-lg-3">
                         <li class="nav-item" id="nav-item">
                             <a class="nav-link" href="#">Inicio</a>
                         </li>
@@ -42,22 +55,25 @@
                             <a class="nav-link" href="#">Nintndo</a>
                         </li>
                     </ul>
-                    
+
                 </div>
             </div>
 
-            
 
-            
 
+            <!-- Iconos Navegacion -->
             <div class="contnedor-icons d-flex gap-3 h-auto">
                 <div class="icons-nav d-flex align-content-center">
-                    <ul class="d-flex align-content-center gap-sm-2 gap-md-4">
+                    <ul class="d-flex align-content-center gap-2 gap-md-4">
+
+                        <!-- Carrito -->
                         <li>
                             <a href="">
                                 <img src="Imagenes/iconos/carrito.png" alt="" class="icono">
                             </a>
                         </li>
+
+                        <!-- Cuenta -->
                         <li>
                             <a href="">
                                 <img src="Imagenes/iconos/cuenta.png" alt="" class="icono">
@@ -65,25 +81,27 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Boton Hamburguesa -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#enlaces">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            
-            
-
-
-            
         </nav>
-        <!-- enlaces -->
-        <div class="collapse navbar-collapse" id="enlaces">   
+
+
+        <!-- Barra Navegacion Mobile -->
+        <div class="collapse navbar-collapse" id="enlaces">
             <ul class="navbar-nav p-2" id="nav-mobile">
-                <li class="input nav-item d-flex justify-content-start align-items-center bg-white w-25">
+                <!-- Barra Busqueda Mobile -->
+                <li class="input nav-item d-flex justify-content-start align-items-center bg-white w-100">
                     <div class="icono-lupa d-flex align-content-center">
                         <img src="Imagenes/iconos/lupa.png" alt="">
                     </div>
                     <input type="text">
                 </li>
+
+                <!-- Enlaces Navegacion Mobile -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">Inicio</a>
                 </li>
@@ -95,12 +113,114 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Nintndo</a>
-                </li>               
+                </li>
             </ul>
         </div>
-        
-            
+
+
     </header>
+    <main class="container-lg p-lg-0 p-4">
+
+        <div class="pt-lg-4">
+            <!-- Carusel -->
+            <div id="carouselExampleIndicators" class="carusel carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="Imagenes/baners/Baner1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Imagenes/baners/Baner2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Imagenes/baners/Baner3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <!-- Lo mas nuevo -->
+            <section class="container-fluid p-0">
+                <h3>Lo Nuevo</h3>
+
+                <div class="lista-juegos gap-3">
+                    <div class="item-juego">
+                        <div class="icono-mas">
+                            <img src="Imagenes/iconos/mas.png" alt="icono-mas">
+                        </div>
+                        <a href="">
+                            <div class="img-juego">
+                                <img src="Imagenes/juegos/minecraft.jpg" alt="juego-minecraft">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-juego">
+                        <div class="icono-mas">
+                            <img src="Imagenes/iconos/mas.png" alt="icono-mas">
+                        </div>
+                        <a href="">
+                            <div class="img-juego">
+                                <img src="Imagenes/juegos/minecraft.jpg" alt="juego-minecraft">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-juego">
+                        <div class="icono-mas">
+                            <img src="Imagenes/iconos/mas.png" alt="icono-mas">
+                        </div>
+                        <a href="">
+                            <div class="img-juego">
+                                <img src="Imagenes/juegos/minecraft.jpg" alt="juego-minecraft">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-juego">
+                        <div class="icono-mas">
+                            <img src="Imagenes/iconos/mas.png" alt="icono-mas">
+                        </div>
+                        <a href="">
+                            <div class="img-juego">
+                                <img src="Imagenes/juegos/minecraft.jpg" alt="juego-minecraft">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="container-fluid bg-black">
+
+        <div class="col cont-footer">
+            <div class="row">
+                <img src="Imagenes/iconos/logo-fenix.png" alt="icono-footer">
+            </div>
+            <p class="row">Tu tienda Virtual de confianza</p>
+            <div class="row">
+                <div>
+                    <img src="Imagenes/iconos/whatsapp.png" alt="icono-watsap">
+                </div>
+                <p>cintactanos al 999-999-999</p>
+            </div>
+        </div>
+
+
+
+
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
