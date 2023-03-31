@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Hanken Grotesk";
+}
+
+/* Inicio Encabezado */
+#header{
+    background-color: rgb(255, 195, 83);
+    padding: 0;
+    height: 75px;
+    top: 0;
+    left: 0;
+
+}
+
+/* Icono lupa */
+.icono-lupa{
+    display:flex;
+}
+.icono-lupa img{
+    width: 20px;
+    height: auto;
+}
+
+/* Hover */
+.list-nav li a:hover{
+
+    background-color: black;
+    color: white;
+
+}
+
+
+/* Iconos-navegacion */
+.icons-nav ul li a img{
+    width: 40px;
+    height: auto;
+}
+.icons-nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item a{
+    font-size: 15px;
+}
+.input input, .input{
+    border-radius: 20px;
+}
+
+.navbar-brand img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+button{
+    padding: 4;
+}
+
+#enlaces{
+    background-color: rgb(255, 238, 140);
+    width: 100%
+}
+.barra-nav{
+    width: 100%;
+}
+#bar-nav-desktop{
+    display: none;
+}
+
+
+@media screen and (min-width: 576px) {
+
+    #bar-nav-desktop{
+        display: inline;
+    }
+    #enlaces{
+        display: none;
+    }
+}
+@media screen and (min-width: 992px){
+
+    #nav-item a{
+        font-size: 17px;
+    }
+    
+}
+/* Fin Encabezado */
+/* Inicio Main */
+.lista-juegos{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.item-juego{
+    display: flex;
+    justify-content: center;
+}
+.icono-mas img{
+    height: 20px;
+    width: auto;
+    z-index: 2;
+    position: absolute;
+} 
+.img-juego img{
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
+    border: 2px black solid;
+}
+@media screen and (min-width: 576px){
+
+    .icono-mas img{
+        height: 24px;
+        width: auto;
+    } 
+
+    .img-juego img{
+        width: 170px;
+        height: auto;
+    }
+
+    .lista-juegos{
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .nav-item {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        border-radius: 30px;
+        padding: 0px 10px;
+    }
+    
+    .nav-item:hover {
+        background-color: orange;
+        opacity: 70%;
+    }
+    
+    .nav-item > img {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+
+
+    .img-juego img{
+        width: 190px;
+        height: auto;
+    }
+    .lista-juegos{
+        grid-template-columns: repeat(4, auto);
+    }
+    
+}
+
+/* Footer */
+footer{
+    background-color: rgb(82, 82, 82);
+}
+
+@media screen and(min-width:992px){
+
+    #footer{
+        height: 32rem;
+    }
+    
+}
+.cont-footer div img, .icono-watsap img{
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+}
+
