@@ -7,7 +7,7 @@
     
     <!-- Estilos -->
     <link rel="stylesheet" href="estilos/main.css">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/styles.css">
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,8 @@
 </head>
 <body>
 
-    <header id="header" class="container-xl z-3 position-sticky p-0">
+    <!-- Encabezado -->
+    <header class="container-fluid z-3 position-sticky p-0">
 
         <nav class="navbar justify-content-sm-between navbar-expand-sm p-2">
 
@@ -133,11 +134,10 @@
 
     </header>
 
-
     <!-- Main -->
-    <main class="container-lg p-lg-0 p-4">
+    <main>
 
-        <div class="py-lg-4">
+        <div class="container-lg p-lg-0 px-4 py-4">
             <!-- Carusel -->
             <div id="carouselExampleIndicators" class="carusel carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -165,10 +165,44 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <!-- Articulos -->
+            <section class="articulos container-fluid p-0 py-3 gap-3">
+
+                <div class="item-articulos mayor-1">
+                    <a href="">
+                        <img src="Imagenes/articulos/silla-gamer.jpg" alt="silla-gamer">
+                    </a>
+                </div>
+                <div class="item-articulos mayor-2">
+                    <a href="">
+                        <img src="Imagenes/articulos/coleccionables.jpg" alt="silla-gamer">
+                    </a>
+                </div>
+                <div class="item-articulos">
+                    <a href="">
+                        <img src="Imagenes/articulos/parlantes.jpg" alt="parlantes-gamer">
+                    </a>
+                </div>
+                <div class="item-articulos">
+                    <a href="">
+                        <img src="Imagenes/articulos/teclado-gamer.jpg" alt="teclado-gamer">
+                    </a>
+                </div>
+                <div class="item-articulos">
+                    <a href="">
+                        <img src="Imagenes/articulos/audifonos-gamer.jpg" alt="teclado-gamer">
+                    </a>
+                </div>
+                <div class="item-articulos">
+                    <a href="">
+                        <img src="Imagenes/articulos/mouse-gamer.jpg" alt="parlantes-gamer">
+                    </a>
+                </div>
+            </section>
 
             <!-- Lo mas nuevo -->
             <section class="container-fluid p-0 py-3">
-                <h3>Lo Nuevo</h3>
+                <h2 class="py-2">Lo Nuevo</h2>
 
                 <div class="lista-juegos gap-3">
                     <div class="item-juego">
@@ -216,7 +250,7 @@
 
             <!-- Los mas Vendidos -->
             <section class="container-fluid p-0 py-3">
-                <h3>Los mas vendidos</h3>
+                <h2 class="py-2">Los mas vendidos</h2>
 
                 <div class="lista-juegos gap-3">
                     <div class="item-juego">
@@ -261,9 +295,28 @@
                     </div>
                 </div>
             </section>
-
         </div>
+        <div>
+            <!-- Resgistrate -->
+            <section class="registrar container-fluid py-4">
 
+                <div class="d-flex justify-content-center align-content-center flex-column">
+                    <h2 class="h2 text-center">¡Unetenos!</h2>
+
+                    <p class="text-center">Registrate para recibir notificaciones</p>
+
+                    <div class="d-flex justify-content-center align-content-center flex-column gap-2">
+                        <div class="container d-flex justify-content-center border-0">
+                            <input type="text" placeholder="Nombre" class="input-registro" >
+                        </div>
+                        <div class="comtainer d-flex justify-content-center border-0">
+                            <input type="text" placeholder="Correo electrónico" class="input-registro">
+                        </div>          
+                    </div>
+                </div>
+
+            </section>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -281,11 +334,8 @@
                 <p class="d-flex justify-content-center align-self-center m-0">contactanos al 999-999-999</p>
             </div>
         </div>
-
-
-
-
     </footer>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

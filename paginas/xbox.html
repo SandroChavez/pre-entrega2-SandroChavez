@@ -7,7 +7,7 @@
     
     <!-- Estilos -->
     <link rel="stylesheet" href="../estilos/main.css">
-    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/styles.css">
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,44 +18,45 @@
 </head>
 <body>
 
-    <header id="header" class="container-xl z-3 position-sticky">
+    <header id="header" class="container-fluid z-3 position-sticky p-0">
 
         <nav class="navbar justify-content-sm-between navbar-expand-sm p-2">
 
 
             <!-- logo -->
-            <a class="navbar-brand" href="../index.html">
-                <img src="../Imagenes/iconos/logo-fenix.png" alt="" class="icono">
+            <a class="logo navbar-brand" href="../index.html">
+                <img src="../Imagenes/iconos/logo-fenix.png" alt="logo-icono">
             </a>
 
             <!-- Barra navegacion Desktop -->
-            <div id="bar-nav-desktop">
-                <div>
+            <div class="bar-nav-desktop" id="nav-desktop">
+                <div class="container-md gap-2 w-100">
+                    
 
                     <!-- Barra Busqueda Desktop -->
-                    <div class="input d-flex justify-content-start align-items-center  bg-white">
+                    <div class="d-flex justify-content-start align-items-center w-100 bg-white rounded">
                         <div class="icono-lupa d-flex align-content-center">
                             <img src="../Imagenes/iconos/lupa.png" alt="">
                         </div>
-                        <input type="text">
+                        <input class="border-0 w-100 rounded" type="text">
                     </div>
 
-                    <!-- Lista Enlaces Destop -->
-                    <ul class="list-nav navbar-nav justify-content-center gap-lg-3">
-                        <li class="nav-item" id="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
+                    <!-- Lista Enlaces Desktop -->
+                    <ul class="list-nav navbar-nav justify-content-center gap-lg-2" id="list-nav-desktop">
+                        <li class="nav-item">
+                            <a class="nav-link rounded" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item" id="nav-item">
-                            <a class="nav-link" href="pc.html">Pc</a>
+                        <li class="nav-item">
+                            <a class="nav-link rounded" href="../paginas/pc.html">Pc</a>
                         </li>
-                        <li class="nav-item" id="nav-item">
-                            <a class="nav-link" href="playstation.html">Playstation</a>
+                        <li class="nav-item">
+                            <a class="nav-link rounded" href="../paginas/playstation.html">Playstation</a>
                         </li>
-                        <li class="nav-item" id="nav-item">
-                            <a class="nav-link" href="xbox.html">XBOX</a>
+                        <li class="nav-item">
+                            <a class="nav-link rounded" href="../paginas/xbox.html">XBOX</a>
                         </li>
-                        <li class="nav-item" id="nav-item">
-                            <a class="nav-link" href="nintendo.html">Nintndo</a>
+                        <li class="nav-item">
+                            <a class="nav-link rounded" href="../paginas/nintendo.html">Nintendo</a>
                         </li>
                     </ul>
 
@@ -71,14 +72,14 @@
 
                         <!-- Carrito -->
                         <li>
-                            <a href="carrito.html">
+                            <a href="../paginas/carrito.html">
                                 <img src="../Imagenes/iconos/carrito.png" alt="" class="icono">
                             </a>
                         </li>
 
                         <!-- Cuenta -->
                         <li>
-                            <a href="cuenta.html">
+                            <a href="../paginas/cuenta.html">
                                 <img src="../Imagenes/iconos/cuenta.png" alt="" class="icono">
                             </a>
                         </li>
@@ -86,7 +87,7 @@
                 </div>
 
                 <!-- Boton Hamburguesa -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#enlaces">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-mobile">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -94,31 +95,37 @@
 
 
         <!-- Barra Navegacion Mobile -->
-        <div class="collapse navbar-collapse" id="enlaces">
-            <ul class="navbar-nav p-2" id="nav-mobile">
+        <div class="collapse navbar-collapse d-sm-none" id="nav-mobile">
+            <ul class="nav-mobile navbar-nav p-2 gap-2">
+                
                 <!-- Barra Busqueda Mobile -->
-                <li class="input nav-item d-flex justify-content-start align-items-center bg-white w-100">
+                <li class="nav-item d-flex justify-content-start align-items-center bg-white w-75 rounded">
                     <div class="icono-lupa d-flex align-content-center">
                         <img src="../Imagenes/iconos/lupa.png" alt="">
                     </div>
-                    <input type="text">
+                    <input class="w-100 border-0 input-nav rounded" type="text">
                 </li>
 
                 <!-- Enlaces Navegacion Mobile -->
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
+                <li class="nav-item d-flex align-items-center gap-1">
+                    <img src="../Imagenes/vinietas/punta-de-flecha-derecha-en-circulo.png" alt="img_vi">
+                    <a class="nav-link p-0 px-2 rounded" href="../index.html">Inicio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pc.html">Pc</a>
+                <li class="nav-item d-flex align-items-center gap-1">
+                    <img src="../Imagenes/vinietas/punta-de-flecha-derecha-en-circulo.png" alt="img_vi">
+                    <a class="nav-link p-0 px-2 rounded" href="../paginas/pc.html">PC</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="playstation.html">Playstation</a>
+                <li class="nav-item d-flex align-items-center gap-1">
+                    <img src="../Imagenes/vinietas/punta-de-flecha-derecha-en-circulo.png" alt="img_vi">
+                    <a class="nav-link p-0 px-2 rounded" href="../paginas/playstation.html">Playstation</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="xbox.html">XBOX</a>
+                <li class="nav-item d-flex align-items-center gap-1">
+                    <img src="../Imagenes/vinietas/punta-de-flecha-derecha-en-circulo.png" alt="img_vi">
+                    <a class="nav-link p-0 px-2 rounded" href="../paginas/xbox.html">XBOX</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="nintendo.html">Nintndo</a>
+                <li class="nav-item d-flex align-items-center gap-1">
+                    <img src="../Imagenes/vinietas/punta-de-flecha-derecha-en-circulo.png" alt="img_vi">
+                    <a class="nav-link p-0 px-2 rounded" href="../paginas/nintendo.html">Nintendo</a>
                 </li>
             </ul>
         </div>
@@ -176,7 +183,9 @@
                     </div>
                 </div>
             </section>
-            <section class="container-fluid p-0">
+
+            <!-- XBOX ONE -->
+            <section class="container-fluid p-0 py-3">
                 <h3>XBOX ONE</h3>
 
                 <div class="lista-juegos gap-3">
@@ -228,10 +237,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="container-fluid py-3">
+    <footer class="container-fluid bg-dark py-3">
 
         <div class="cont-footer d-flex justify-content-center flex-column gap-3">
-            <div class="d-flex justify-content-center">
+            <div class="logo-footer d-flex justify-content-center">
                 <img src="../Imagenes/iconos/logo-fenix.png" alt="icono-footer">
             </div>
             <p class="d-flex justify-content-center align-content-center m-0">Tu tienda Virtual de confianza</p>
@@ -242,11 +251,8 @@
                 <p class="d-flex justify-content-center align-self-center m-0">contactanos al 999-999-999</p>
             </div>
         </div>
-
-
-
-
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
