@@ -36,6 +36,7 @@ header {
 
 .nav-item a:hover {
   color: rgb(226, 226, 226);
+  background-color: black;
 }
 
 .icono-lupa img {
@@ -54,7 +55,7 @@ header {
   grid-template-rows: repeat(4, 1fr);
 }
 .articulos .item-articulos a img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 .articulos .mayor-1 {
@@ -62,6 +63,19 @@ header {
 }
 .articulos .mayor-2 {
   grid-column: 1/3;
+}
+
+.consolas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.consolas div img {
+  border: solid black 2px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 456px;
+  height: 100%;
 }
 
 .lista-juegos {
@@ -81,13 +95,36 @@ header {
 .lista-juegos .item-juego .img-juego img {
   height: auto;
   border-radius: 15px;
-  border: 2px black solid;
+  border: 2px rgb(61, 61, 61) solid;
+}
+
+.articulos-pc-lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.articulos-pc-lista .articulo-pc {
+  border: solid rgb(58, 58, 58) 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articulos-pc-lista .articulo-pc a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articulos-pc-lista .articulo-pc a img {
+  max-width: 100%;
+  height: auto;
 }
 
 .registrar {
   background-color: rgb(255, 235, 146);
 }
 .registrar .input-registro {
+  border: black solid 1px;
+  border-radius: 8px;
   width: 250px;
 }
 .registrar .input-registro::-moz-placeholder {
@@ -120,6 +157,10 @@ footer .icono-watsap img {
   }
   .logo img {
     width: 50px;
+  }
+  .consolas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   .lista-juegos {
     grid-template-columns: repeat(3, 1fr);
@@ -164,10 +205,25 @@ footer .icono-watsap img {
   .logo img {
     width: 55px;
   }
+  .list-icons li a img {
+    width: 44px;
+  }
   #list-nav-desktop {
     font-size: 17px;
   }
   .img-juego img {
     width: 180px;
+  }
+  .articulos-pc-lista {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nav-item a {
+    font-size: 19px;
+  }
+  .img-juego img {
+    width: 195px;
   }
 }/*# sourceMappingURL=styles.css.map */
