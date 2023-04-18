@@ -103,7 +103,7 @@ header {
     grid-template-rows: 1fr 1fr;
     div{
         img{
-            border: solid black 2px;
+            box-shadow: 0 0 10px 2px grey;
             border-radius: 10px;
             
             width: 100%;
@@ -138,7 +138,7 @@ header {
             
             height: auto;
             border-radius: 15px;
-            border: 2px rgb(61, 61, 61) solid;
+            box-shadow: 0 0 4px 2px grey;
         }
     }
 }
@@ -149,7 +149,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     .articulo-pc{
-        border: solid rgb(58, 58, 58) 2px;
+        box-shadow: 0 0 10px 2px grey;
 
         display: flex;
         justify-content: center;
@@ -245,6 +245,12 @@ footer {
         }
     }
 
+    // Articulos Pc
+    .articulos-pc-lista{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
     //Registrar
     .registrar{
         .input-registro{
@@ -303,6 +309,11 @@ footer {
         font-size: 17px;
     }
 
+    // h2
+    h2{
+        font-size: 36px !important;
+    }
+
     // Imagen Juego
     .img-juego {
        
@@ -311,11 +322,6 @@ footer {
         }    
     }
 
-    // Articulos Pc
-    .articulos-pc-lista{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
 }
 
 @media screen and (min-width:1400px) {
